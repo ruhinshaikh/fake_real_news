@@ -10,6 +10,7 @@ I tried similar steps in [fake_real_1.ipynb](./fake_real_1.ipynb) into my new no
 2.	The next step was to pre-process the data. I removed punctuation and stop words from the text. The data is also lemmatized to its root form.
 3.	The next step was to vectorize our data and I decided to try both BoW and TF-IDF to vectorize the data . BoW yielded better accuracy for the entire dataset than TF-IDF
 4.	I initially created a base model using Logistic Regression that gave me an accuracy of 0.964 using bow and 0.9531 using tf-idf
+I decided to use accuracy as a comparison parameter because both the classes had equal representation.
 5.	I tried to use both techniques on Decision Tree and the accuracy score were as follow:
 bow – 0.96 , tf-idf– 0.95. Again, bow performed better.
 6.	For the next model training, I decided to go ahead with bow vectorizing on an SGD classifier because it gave slightly better results. The accuracy score using SGD classifier was 0.965. It was better than Decision Tree but not better than Logistic Regression
